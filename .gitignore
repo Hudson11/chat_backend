@@ -1,0 +1,7 @@
+node_modules
+*.lock
+*.log
+.env
+node_modules
+yarn-error.log
+*.lock
