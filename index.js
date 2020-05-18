@@ -28,6 +28,10 @@ mongoose.connect(process.env.SECRET_URL_DATABASE).then(() => {
     console.log('Erro ao Conectar ao mongo' + err);
 });
 
+app.get('/', (req, res) => {
+    res.json({status: true, message: 'ok'});
+})
+
 // Routers
 app.use('/user', userRouter);
 app.use('/auth', authRouter);
