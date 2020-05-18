@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const algorithm = process.env.ALGORITHM;
-const key = crypto.scryptSync(process.env.PASSWORD, process.env.KEY_BINARYLIKE, parseInt(process.env.KEY_KEYLEN));
+const key = crypto.scryptSync(process.env.PASSWORD, process.env.KEY_BINARYLIKE, parseInt(24));
 const iv = Buffer.alloc(16, 0); // Initialization vector.
 
 module.exports = {
