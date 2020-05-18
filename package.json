@@ -1,6 +1,6 @@
 {
   "name": "chatRealtime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -15,5 +15,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0"
-  }
+  },
+  "repository": "https://github.com/Hudson11/chat_backend.git",
+  "author": "hudson <hudsonhdj36@gmail.com>"
 }
