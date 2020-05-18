@@ -20,7 +20,6 @@ app.use(bodyParser.json());
 
 //Mongoose
 mongoose.Promise = global.Promise;
-mongoose.set('useUnifiedTopology', true);
 mongoose.set('useNewUrlParser', true);
 mongoose.connect(process.env.SECRET_URL_DATABASE).then(() => {
     console.log('Conectado ao Mongo');
