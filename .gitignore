@@ -3,5 +3,5 @@ node_modules
 *.log
 .env
 node_modules
-yarn-error.log
+*.log
 *.lock

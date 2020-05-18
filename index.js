@@ -32,7 +32,7 @@ mongoose.connect(process.env.SECRET_URL_DATABASE).then(() => {
 app.use('/user', userRouter);
 app.use('/auth', authRouter);
 
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, (args) => {
     console.log('http://localhost:'+PORT);
