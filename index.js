@@ -27,6 +27,11 @@ mongoose.connect(process.env.SECRET_URL_DATABASE).then(() => {
 }).catch((err) => {
     console.log('Erro ao Conectar ao mongo' + err);
 });
+mongoose.connection.once('open', () => {
+    console.log('connection success');
+}).on('error', (err) => {
+    console.log(err);
+});
 
 app.get('/', (req, res) => {
     res.json({status: true, message: 'ok'});
